@@ -138,6 +138,7 @@ class RestSource extends DataSource {
         unset($Xml);
       	break;
       case 'application/json':
+      case 'text/javascript':
         $response = json_decode($response, true);
         break;
     }
